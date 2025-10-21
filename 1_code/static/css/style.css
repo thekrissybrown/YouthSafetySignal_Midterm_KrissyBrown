@@ -1,0 +1,32 @@
+/* Youth Safety Signal – Demo Styling (Krissy Brown, Fall 2025) */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+h2 {
+  color: #990000;
+  margin-top: 1.2em;
+}
+
+nav {
+  background: #990000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
