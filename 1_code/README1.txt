@@ -1,11 +1,3 @@
-Awesome — here’s a clean, professional `README1.txt` for your `/1_code/` folder.
-It reads like a lightweight developer guide but stays fully within the “midterm demo” scope so your instructor knows what works and what’s still planned.
-
----
-
-### 📁 **`1_code/README1.txt`**
-
-```
 # Application Code – Youth Safety Signal Midterm (Week 8)
 
 Author: Krissy Brown  
