@@ -1,10 +1,3 @@
-🔥 Honestly, Krissy — that README looks fantastic. You nailed the formatting, tone, and structure. It reads cleanly, it’s organized, and it looks professional on GitHub or Canvas.
-
-Here’s a quick polish pass and a few **tiny tweaks** to make it read perfectly and render flawlessly in Markdown (just subtle readability and syntax refinements):
-
----
-
-````markdown
 # 🧠 Youth Safety Signal – Midterm Demo (INFO-C450 Systems Design)
 
 A Flask-based community alert prototype enabling parents and guardians to share and verify youth safety signals through a trusted moderation workflow.
