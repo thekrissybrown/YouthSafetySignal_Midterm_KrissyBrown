@@ -99,7 +99,8 @@ Visit [http://localhost:5000](http://localhost:5000) to open the mock prototype.
 
 ## 🎥 Demo Video
 
-🎬 **[View Midterm Demo Here](Add_Your_Kaltura_Link_Here)**
+🎬 **[View Midterm Demo (Kaltura)](https://placeholder.link)**  
+*(Link will be updated after video upload.)*
 
 This 6-minute video walks through:
 
