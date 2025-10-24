@@ -1,1 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Approved Safety Signals</h1>
+
+{% if signals %}
+  <ul class="signal-list">
+    {% for s in signals %}
+      <li class="signal-card risk-{{ s.risk_level|lower }}">
+        <div class="signal-title">{{ s.title }}</div>
+        <div class="signal-meta">
+          Platform: <strong>{{ s.platform }}</strong> ·
+          Risk: <strong>{{ s.risk_level }}</strong> ·
+          Status: <strong>Approved</strong>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="muted">No approved items yet. Add one via <a href="{{ url_for('submit') }}">Submit</a>.</p>
+{% endif %}
+{% endblock %}
 

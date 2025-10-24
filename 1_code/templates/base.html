@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Youth Safety Signal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('submit') }}">Submit</a>
+      <a href="{{ url_for('moderation') }}">Moderation</a>
+      <span class="brand">Youth Safety Signal</span>
+    </nav>
+  </header>
 
+  <div class="demo-banner">
+    <strong>Demo Mode:</strong> Mock data only. Flow = Submit → Review → Approve.
+  </div>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <small>INFO-C450 · Midterm Prototype · Krissy Brown</small>
+  </footer>
+</body>
+</html>

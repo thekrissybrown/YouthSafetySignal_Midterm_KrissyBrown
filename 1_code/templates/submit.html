@@ -1,1 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Submit a Safety Signal</h1>
+
+<form method="post" class="card form">
+  <label>
+    Title
+    <input type="text" name="title" placeholder="e.g., Unsafe TikTok challenge" required />
+  </label>
+
+  <label>
+    Platform
+    <select name="platform">
+      <option>Instagram</option>
+      <option>Snapchat</option>
+      <option>TikTok</option>
+      <option>Discord</option>
+      <option>Email</option>
+      <option>Community</option>
+      <option>Other</option>
+    </select>
+  </label>
+
+  <label>
+    Risk Level
+    <select name="risk_level">
+      <option>Low</option>
+      <option>Medium</option>
+      <option selected>High</option>
+    </select>
+  </label>
+
+  <div class="actions">
+    <button type="submit">Submit</button>
+    <a class="btn-secondary" href="{{ url_for('dashboard') }}">Cancel</a>
+  </div>
+</form>
+{% endblock %}
 
