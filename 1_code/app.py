@@ -10,7 +10,8 @@ Description:
     - Dashboard display of approved signals
 """
 
-from flask import Flask, render_template, request, redirect, url_for
+import os
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 
 app = Flask(__name__)
 
@@ -42,6 +43,21 @@ mock_signals = [
 ]
 
 
+# ------------------------------
+# Favicon Route (fixes tab icon warning)
+# ------------------------------
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'favicon.ico',
+        mimetype='image/vnd.microsoft.icon'
+    )
+
+
+# ------------------------------
+# Routes
+# ------------------------------
 @app.route("/")
 def dashboard():
     """Displays approved safety signals (mock)."""
@@ -87,6 +103,9 @@ def moderation():
     return render_template("moderation.html", signals=pending)
 
 
+# ------------------------------
+# Run the App
+# ------------------------------
 if __name__ == "__main__":
     # Run from the 1_code directory:
     #   (.venv) PS ...\1_code> python app.py
