@@ -1,0 +1,112 @@
+# -----------------------------
+# 🐍 Python / Flask Project
+# -----------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Flask specific
+instance/
+.webassets-cache
+*.db
+*.sqlite3
+*.sqlite
+.env
+*.env
+.env.bak
+.env.local
+
+# -----------------------------
+# 🧠 Virtual Environment
+# -----------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------
+# 💻 IDE / Editor Settings
+# -----------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# VS Code launch configs (safe to ignore)
+.vscode/launch.json
+.vscode/settings.json
+.vscode/extensions.json
+
+# -----------------------------
+# 🧪 Testing / Debug
+# -----------------------------
+pytestdebug.log
+*.log
+debug.log
+
+# -----------------------------
+# 🪟 Windows / Mac System Files
+# -----------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# -----------------------------
+# 📦 Dependency / Build Files
+# -----------------------------
+# Don’t ignore requirements.txt (we need that!)
+!requirements.txt
+
+# Ignore cache or temp data folders
+tmp/
+temp/
+*.bak
+*.tmp
