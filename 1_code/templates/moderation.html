@@ -1,28 +1,26 @@
 {% extends "base.html" %}
+{% block title %}Moderation Queue · Youth Safety Signal{% endblock %}
+
 {% block content %}
 <h1>Moderation Queue</h1>
 
 {% if signals %}
-  <ul class="signal-list">
-    {% for s in signals %}
-      <li class="signal-card risk-{{ s.risk_level|lower }}">
-        <div class="signal-title">{{ s.title }}</div>
-        <div class="signal-meta">
-          Platform: <strong>{{ s.platform }}</strong> ·
-          Risk: <strong>{{ s.risk_level }}</strong> ·
-          Status: <strong>{{ s.status }}</strong>
-        </div>
-
-        <form method="post" class="row">
-          <input type="hidden" name="signal_id" value="{{ s.id }}" />
-          <button name="action" value="approve">Approve</button>
-          <button class="btn-danger" name="action" value="reject">Reject</button>
-        </form>
-      </li>
-    {% endfor %}
-  </ul>
+  {% for s in signals %}
+  <form method="post" class="card moderation-card">
+    <h3>{{ s.title }}</h3>
+    <p>
+      Platform: <strong>{{ s.platform }}</strong> ·
+      Risk: <strong>{{ s.risk_level }}</strong> ·
+      Status: <strong>{{ s.status }}</strong>
+    </p>
+    <input type="hidden" name="signal_id" value="{{ s.id }}">
+    <div class="actions">
+      <button name="action" value="approve">Approve</button>
+      <button name="action" value="reject" class="btn-secondary">Reject</button>
+    </div>
+  </form>
+  {% endfor %}
 {% else %}
-  <p class="muted">No pending items. Submit one to populate this queue.</p>
+  <p class="muted">No pending signals for review.</p>
 {% endif %}
 {% endblock %}
-

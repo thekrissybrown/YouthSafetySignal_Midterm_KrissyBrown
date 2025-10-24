@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% block title %}Dashboard · Youth Safety Signal{% endblock %}
+
 {% block content %}
 <h1>Approved Safety Signals</h1>
 
@@ -10,13 +12,15 @@
         <div class="signal-meta">
           Platform: <strong>{{ s.platform }}</strong> ·
           Risk: <strong>{{ s.risk_level }}</strong> ·
-          Status: <strong>Approved</strong>
+          Status: <strong>{{ s.status }}</strong>
         </div>
       </li>
     {% endfor %}
   </ul>
 {% else %}
-  <p class="muted">No approved items yet. Add one via <a href="{{ url_for('submit') }}">Submit</a>.</p>
+  <p class="muted">
+    No approved items yet. Add one via
+    <a href="{{ url_for('submit') }}">Submit</a>.
+  </p>
 {% endif %}
 {% endblock %}
-
