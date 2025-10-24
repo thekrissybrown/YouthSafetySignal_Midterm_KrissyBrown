@@ -1,4 +1,4 @@
-"""
+'''
 Youth Safety Signal – Midterm Demo (INFO-C450 Systems Design)
 Author: Krissy Brown
 Semester: Fall 2025
@@ -7,7 +7,7 @@ Description:
     - Submit a safety signal
     - Moderator review & approval
     - Dashboard display of approved signals
-"""
+'''
 
 from flask import Flask, render_template, request, redirect, url_for
 
