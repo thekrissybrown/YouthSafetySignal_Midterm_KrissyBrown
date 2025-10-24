@@ -69,3 +69,7 @@ button, .btn-secondary, .btn-danger {
   background: #ffffffcc; backdrop-filter: blur(4px);
   border-top: 1px solid #e5e7eb; padding: 8px 16px; text-align: center;
 }
+.row { display:flex; gap:8px; margin-top:12px; }
+button { cursor:pointer; }
+button[name="action"][value="approve"] { background:#10b981; color:#fff; border-color:#10b981; }
+button[name="action"][value="reject"]  { background:#ef4444; color:#fff; border-color:#ef4444; }

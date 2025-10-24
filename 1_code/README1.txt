@@ -4,13 +4,11 @@ Author: Krissy Brown
 Course: INFO-C450 Systems Design  
 Semester: Fall 2025
 
----
 
 ## Purpose
 This folder contains the **Flask-based prototype** developed for the Week 8 midterm demo.  
 The current version demonstrates the core functionality flow of the Youth Safety Signal platform, using mock data and placeholder templates to simulate the user experience.
 
----
 
 ## Current Features
 ✅ Flask application structure established (`app.py`, routes, templates)  
@@ -19,7 +17,6 @@ The current version demonstrates the core functionality flow of the Youth Safety
 ✅ Static folder organization for CSS and images  
 🕓 Database integration and user authentication planned for final release  
 
----
 
 ## File Overview
 ```
@@ -39,7 +36,6 @@ The current version demonstrates the core functionality flow of the Youth Safety
 
 ````
 
----
 
 ## How to Run the Demo
 ### Requirements
@@ -61,8 +57,6 @@ flask run
 ````
 
 Visit **[http://localhost:5000](http://localhost:5000)** in your browser.
-
----
 
 ## Next Steps (Post-Midterm)
 
