@@ -1,7 +1,0 @@
-{
-  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-  "gitlens.views.branches.showRemoteBranches": true,
-  "gitlens.views.branches.branches.layout": "list",
-  "gitlens.views.repositories.includeWorkingTree": true,
-  "scm.alwaysShowRepositories": true
-}
