@@ -10,7 +10,7 @@ Semester: Fall 2025
 This folder will contain **data collection scripts** used for populating the system with sample "Safety Signal" data for testing and analysis.
 
 ## Current Status
-Data automation scripts not yet implemented.  
+Data automation scripts not yet implemented, pending MySQL access.  
 For the midterm, mock records are generated directly within the Flask demo.
 
 ## Planned Tools

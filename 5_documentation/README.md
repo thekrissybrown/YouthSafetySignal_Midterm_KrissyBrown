@@ -102,7 +102,7 @@ Visit [http://localhost:5000](http://localhost:5000) to open the mock prototype.
 🎬 **[View Midterm Demo (Kaltura)](https://placeholder.link)**  
 *(Link will be updated after video upload.)*
 
-This 6-minute video walks through:
+This brief video walks through:
 
 1. Dashboard overview
 2. Signal submission process
