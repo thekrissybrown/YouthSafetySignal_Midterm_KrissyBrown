@@ -64,9 +64,8 @@ YouthSafetySignal_Midterm_KrissyBrown/
 ├── 5_documentation/
 │   ├── System_requirements_documentation.pdf
 │   ├── Brochure.pdf
-│   └── Presentation_slides.pdf
-│
-└── explanation.pdf            # Explanation of placeholder folders
+│   └── Presentation.pdf
+└── 
 ````
 
 ---
@@ -118,7 +117,7 @@ Located in the `/5_documentation/` folder:
 
 * **System_requirements_documentation.pdf** → Combined Modules 1–4 + updates
 * **Brochure.pdf** → Two-page marketing flyer with demo link
-* **Presentation_slides.pdf** → 5-slide overview used in demo video
+* **Presentation.pdf** → 5-slide overview used in demo video
 
 ---
 
